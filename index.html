@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Video Game Did I Play Yesterday?</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <style>
+      :root {
+        --font-family: sans-serif;
+        --font-size: 14px;
+        --line-height: 1.3em;
+        --font-color: black;
+        --link-color: #22506A;
+        --link-text-decoration: none;
+
+        --content-padding: 25px;
+        --content-bg-color: #8dd9cc;
+
+        --header-height: 150px;
+        --header-background: url('/lain-iwakura-serial-experiments-lain-wallpaper-preview.jpg');
+        --header-margin-bottom: 0px;
+
+        --sidebar-margin: 10px;
+        --sidebar-width: 150px;
+        --sidebar-padding: 15px;
+        --sidebar-bg-color: #8dd9cc;
+
+        --footer-height: 60px;
+        --footer-bg-color: #8dd9cc;
+
+        --navitems-alignment: center;
+        --space-between-navitems: 20px;
+        --navbar-margin-bottom: 10px;
+        --nav-bg-color: #8dd9cc;
+
+        --container-width: 800px;
+        --container-bg-color: #d98d9a;
+
+        --row-gap: 5px;
+        --sidebar-height: 100%;
+        --sidebar-overflow: hidden;
+        --background-color: #d98d9a;
+      }
+
+      html, body {
+        margin: 0; padding: 0;
+        background-color: var(--background-color);
+        background-image: url('/lainwallpaper.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        font-family: var(--font-family);
+        font-size: var(--font-size);
+        line-height: var(--line-height);
+        color: var(--font-color);
+      }
+
+      body a { color: var(--link-color); font-weight:bold; text-decoration:var(--link-text-decoration); }
+
+      #main-container { max-width: var(--container-width); margin:0 auto; background-color:var(--container-bg-color); }
+      .flex{ display:flex; margin-bottom:var(--row-gap); }
+      #content-container{ width:60%; margin-bottom:var(--row-gap); background-color:var(--content-bg-color); }
+      #left-sidebar{ width:var(--sidebar-width); margin-right:var(--sidebar-margin); margin-bottom:var(--row-gap); height:var(--sidebar-height); overflow:var(--sidebar-overflow); background-color:var(--sidebar-bg-color); }
+      #right-sidebar{ width:var(--sidebar-width); margin-left:var(--sidebar-margin); margin-bottom:var(--row-gap); height:var(--sidebar-height); overflow:var(--sidebar-overflow); background-color:var(--sidebar-bg-color); }
+      #header-contained{ 
+        height:var(--header-height); 
+        margin-bottom:var(--header-margin-bottom); 
+        background-image:var(--header-background); 
+        background-position:center center;
+        background-size: cover;
+      }
+      .nav{ text-align:var(--navitems-alignment); margin-top:0; margin-bottom:var(--navbar-margin-bottom); padding-top:1em; padding-bottom:1em; background-color:var(--nav-bg-color);} 
+      .nav li{ display:inline-block; padding-right:var(--space-between-navitems); }
+      .wrapper{ padding:var(--content-padding); padding-top:var(--sidebar-padding); }
+      .sidebar-wrapper{ padding:var(--sidebar-padding); height:var(--sidebar-height); overflow:var(--sidebar-overflow); }
+      .footer-wrapper{ padding:5px; }
+
+      @media only screen and (max-width:800px){
+        .flex{ flex-wrap:wrap; }
+        #left-sidebar{ width:100%; display:block; order:2; margin-right:0; margin-bottom:10px }
+        #right-sidebar{ width:100%; display:block; order:3; margin-left:0 }
+        #content-container{ width:100%; display:block; order:1; margin-bottom:10px }
+      }
+    </style>
+
+    <div id="header-full"></div>
+    <div id="main-container">
+      <div id="header-contained"></div>
+      <div id="navbar-contained">
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="content-wrap flex alignment">
+        <div id="left-sidebar" style="display:block;">
+          <br>
+          <li><a href="/year-2025/">Blog 2025</a></li>
+          <br>
+          <img src="/amyadvance.gif" alt="decorative gif">
+          <br><br>
+        </div>
+
+        <div id="content-container" style="flex-grow:1;">
+          <div class="wrapper">
+            <h1>МНЕ ПОХУЙ НА ВАШУ ЖИЗН</h1>
+            <br>
+            <p> Meh, я не совсем уверен, стоит ли мне этим заниматься, но вот он — мой первый полноценный сайт, на котором я буду публиковать всякую ерунду, истории из своей жизни или просто случайные мысли. Думаю, мне стоит немного рассказать о себе, так что я — Hypnosister (или, по крайней мере, хочу, чтобы меня так звали). Мой возраст не особо важен, но я люблю программировать, читать философские книги, фэнтези, поэзию и иногда литературу фактов. Также обожаю ухаживать за растениями UwU.</p>
+            <br>
+            <br><br>
+              <h1>Эта страница сделана на отвяжись</h1>
+            <br>
+            <p> </p>
+            <br>
+            <br><br>
+          </div>
+        </div>
+
+        <div id="right-sidebar" style="display:none;">
+          <div class="sidebar-wrapper">Right sidebar (placeholder)</div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="footer-wrapper">© 2025 hypnosister-code. All rights reserved.</div>
+      </div>
+    </div>
+
+    <br>
+    <img src="/neocities.png" alt="neocities logo">
+  </body>
+</html>

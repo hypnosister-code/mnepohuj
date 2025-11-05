@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mój Blog 2025</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <style>
+      :root {
+        --font-family: sans-serif;
+        --font-size: 14px;
+        --line-height: 1.3em;
+        --font-color: black;
+        --link-color: #22506A;
+        --link-text-decoration: none;
+
+        --content-padding: 25px;
+        --content-bg-color: #8dd9cc;
+
+        --header-height: 150px;
+        --header-background: url('/lain-iwakura-serial-experiments-lain-wallpaper-preview.jpg');
+        --header-margin-bottom: 0px;
+
+        --sidebar-margin: 10px;
+        --sidebar-width: 150px;
+        --sidebar-padding: 15px;
+        --sidebar-bg-color: #8dd9cc;
+
+        --footer-height: 60px;
+        --footer-bg-color: #8dd9cc;
+
+        --navitems-alignment: center;
+        --space-between-navitems: 20px;
+        --navbar-margin-bottom: 10px;
+        --nav-bg-color: #8dd9cc;
+
+        --container-width: 800px;
+        --container-bg-color: #d98d9a;
+
+        --row-gap: 5px;
+        --sidebar-height: 100%;
+        --sidebar-overflow: hidden;
+        --background-color: #d98d9a;
+      }
+
+      html, body {
+        margin: 0; padding: 0;
+        background-color: var(--background-color);
+        background-image: url('/lainwallpaper.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        font-family: var(--font-family);
+        font-size: var(--font-size);
+        line-height: var(--line-height);
+        color: var(--font-color);
+      }
+
+      body a { color: var(--link-color); font-weight:bold; text-decoration:var(--link-text-decoration); }
+
+      #main-container { max-width: var(--container-width); margin:0 auto; background-color:var(--container-bg-color); }
+      .flex{ display:flex; margin-bottom:var(--row-gap); }
+      #content-container{ width:100%; margin-bottom:var(--row-gap); background-color:var(--content-bg-color); }
+      #header-contained{ 
+        height:var(--header-height); 
+        margin-bottom:var(--header-margin-bottom); 
+        background-image:var(--header-background); 
+        background-position:center center;
+        background-size: cover;
+      }
+      .nav{ text-align:var(--navitems-alignment); margin-top:0; margin-bottom:var(--navbar-margin-bottom); padding-top:1em; padding-bottom:1em; background-color:var(--nav-bg-color);} 
+      .nav li{ display:inline-block; padding-right:var(--space-between-navitems); }
+      .wrapper{ padding:var(--content-padding); padding-top:var(--sidebar-padding); }
+      .footer-wrapper{ padding:5px; }
+
+      @media only screen and (max-width:800px){
+        .flex{ flex-wrap:wrap; }
+        #content-container{ width:100%; display:block; margin-bottom:10px }
+      }
+
+      .blog-entry {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      .blog-date {
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <div id="header-full"></div>
+    <div id="main-container">
+      <div id="header-contained"></div>
+      <div id="navbar-contained">
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="content-wrap flex alignment">
+        <div id="content-container">
+          <div class="wrapper">
+            <h1>Мой блог 2025</h1>
+            <br>
+
+            <!-- Przykładowy wpis - możesz dodawać więcej wpisów powyżej tego komentarza -->
+            <div class="blog-entry">
+              <div class="blog-date">November 5, 2025</div>
+              <p>Мне стало очень скучно, и я думал, что мне делать. Ну и придумал: снова сделаю свой сайт. Ну и всё.</p>
+              <p>Я тоже очень часто думаю о самоубийстве, Поэтому не уверен, буду ли продолжать этим заниматься долго.</p>
+            </div>
+
+            <br><br>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="footer-wrapper">© 2025 hypnosister-code. All rights reserved.</div>
+      </div>
+    </div>
+
+    <br>
+    <img src="/neocities.png" alt="neocities logo">
+  </body>
+</html>
